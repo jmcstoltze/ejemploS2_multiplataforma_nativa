@@ -6,7 +6,7 @@ var path = require('path')
 
 var controllers = {
     new: (req, res) => {
-        var params =  req.body
+        var params = req.body
         try{
             var fullnameVal = !validator.isEmpty(params.fullname)
             var emailVal = !validator.isEmpty(params.email)
@@ -255,3 +255,5 @@ var controllers = {
         }
     }
 }
+
+module.exports = controllers
